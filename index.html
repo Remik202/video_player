@@ -33,6 +33,8 @@
     .js-volume-button i{position:relative;left:var(--vol-left);top:var(--vol-top)}
     .control-btn:last-child{margin-right:0}
     [hidden]{display:none!important}
+    .time{color:#fff;font-size:14px;margin-left:16px;display:inline-flex;align-items:center;gap:6px}
+    .time-sep{opacity:.7}
     .js-fullscreen-button{position:relative}
     .js-fullscreen-button i{line-height:1;position:absolute}
     .fs-ur{top:var(--ur-top);right:var(--ur-right);font-size:var(--ur-size);transform:rotate(45deg)}
@@ -51,6 +53,11 @@
       <button class="js-volume-button control-btn" aria-label="Unmute" hidden>
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
+      <div class="time">
+        <span class="js-current-time">00:00</span>
+        <span class="time-sep">/</span>
+        <span class="js-duration">00:00</span>
+      </div>
       <div class="controls-spacer"></div>
       <button class="js-fullscreen-button control-btn" aria-label="Fullscreen">
         <i class="fa fa-arrow-up fs-ur" aria-hidden="true"></i>
